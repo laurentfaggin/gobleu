@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Bleu plongee</title>
+    <meta name="author" content="Laurent FAGGIN">
+    <meta name="description" content="Promotions">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact_2.css">
+    <link rel="style sheet" href="https://fonts.googleapis.com/css2?family=Sofia&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script defer src="js/contact.js"></script>
+    
+</head>
+
+<body>
+    <header id="top" class="size">
+
+        <a href="index.html"><img src="img/gobleu-logo.png" class="logo" alt="plongee"></a>
+        <h1 class="uppercase p1">Go Bleu</h1>
+
+        <nav>
+            <ul style="margin: 0px">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a> | </a></li>
+                <li><a href="Sites.html">Sites</a></li>
+                <li><a> | </a></li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main class="main"> 
+            <div class="container">
+               
+                <h1 class="titre"><em>Contactez-nous</em></h1>
+                
+
+                <form action="gobleu/index.html" method="get" onsubmit="return checked()">
+                    <div class="groupInput">
+                       
+                        <div class="input etatCivil">
+                            <div class="item">
+                               <label for="fname"><em class="obligatoire" style="color: red;">* </em>Prenom: </label>  
+                                <input type="text" id="fname"  required>
+                            </div>
+                           
+                            <div class="item">
+                                <label for="lname"><em class="obligatoire" style="color: red;">* </em>Nom:</label>
+                                <input type="text" id="lname"  required>
+                            </div>
+                           
+                            <div class="item">
+                                <label for="phone"> Télephone:</label>
+                                <input type="tel" id="phone">
+                            </div>
+                            <div class="item">
+                                <label for="email">Courriel: </label>     
+                                <input type="text" id="email">                    
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                
+                    <div class="groupInput">
+                        <div class="question">Quel est votre niveau d'experience?</div>
+                
+                        <div class="input reverse">
+                            <div class="item">
+                                <label for="Debutant">Débutant</label>
+                                <input type="radio" id="Debutant" name="experience">
+                            </div>
+                            <div class="item">
+                                <label for="Intermediaire">Intermediaire</label>
+                                <input type="radio" id="Intermediaire" name="experience">
+                            </div>
+                            <div class="item">
+                                <label for="Avance">Avance</label>
+                                <input type="radio" id="Avance" name="experience">
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="groupInput">
+                        <div class="question">Sites que vous aimeriez visiter?</div>
+                    
+
+                        <div class="input reverse">
+                            <div class="item">
+                                <label for="Belize">Belize</label>
+                                <input type="checkbox" id="Belize" value="Belize" name="Belize">
+                            </div>
+                            <div class="item">
+                                <label for="Bonaire">Belize</label>
+                                <input type="checkbox" id="Bonaire" value="Bonaire" name="Bonaire">
+                            </div>
+                            <div class="item">
+                                <label for="GrandTurk">Grand Turk</label>
+                                <input type="checkbox" id="GrandTurk" value="GrandTurk" name="GrandTurk">
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="groupInput">
+                        <div class="question">Commentaires: </div>
+                    
+
+                        <div class="input">
+                            <div class="item">
+                                <textarea class="avis"></textarea>
+                            </div>
+                        <div class="input bouton">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                               
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+       
+
+        <aside class="aside">
+            <h2 class="uppercase h22">Promos</h2>
+            <img src="https://via.placeholder.com/180" class="promo" alt="plongee">
+            <img src="https://via.placeholder.com/180" class="promo" alt="plongee">
+        </aside>
+
+    </main>
+
+
+    <footer class="size footer">
+        <p class="copyright">© copyright 2022 entreprise Go Bleu</p>
+        <div class="boutons">
+            <a class="button" href="#top">Haut de la page</a>
+            <a class="align contact" href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

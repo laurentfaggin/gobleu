@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0;
+}
+
+.aside{
+    grid-area : promo;
+}
+
+.avis{
+    margin-top: 15px;
+}
+
+.bouton{
+    width: 80px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    background-color: darkgrey;
+}
+
+div.commentaires{
+    text-align: end;
+}
+
+div.etatCivil{
+    text-align: right;
+}
+
+form{
+    grid-area : formulaire;
+}
+
+.groupInput{
+    display: flex;
+    width: 100%;
+    align-items: start;
+ }
+ 
+.groupInput .input{
+    display: flex;
+    flex: auto;
+}
+
+.groupInput .question{
+    width: 33.333%;
+    text-align: right;     
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input.reverse .item{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.item{   
+    line-height: 22px;
+    font-size: 17px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.item input[type="text"], .item input[type="tel"] {
+    width: 300px;
+}
+    
+.item label{
+    width: 33.333%;
+}
+    
+.main{
+    grid-template-areas: "formulaire promo";
+}
+
+.question{
+    margin-top: 15px;
+}
+
+.reverse{
+    margin-top: 15px;
+}
+
+textarea{
+    max-width: 450px;
+    width: 100%;
+    height:50px;;
+}
+
+
+@media (max-width: 575px) { 
+    /* Votre code pour petits appareils */
+    input:not(.reverse) .item label{
+        width: 100%;
+    }
+    input:not(.reverse) .item input[type="text"],
+    input:not(.reverse) .item input[type="tel"] {
+        width: 100%;
+    }
+
+    .groupInput{
+        flex-wrap: wrap;
+    }
+    .groupInput .question, .groupInput .input{
+        width: 100%;
+        text-align:left
+    }
+}
+
